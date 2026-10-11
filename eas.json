@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 21.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://56.228.42.75:3000/api",
+        "EXPO_PUBLIC_USE_MOCK_API": "false",
+        "NODE_OPTIONS": "--max-old-space-size=4096",
+        "EAS_SKIP_AUTO_FINGERPRINT": "1"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://56.228.42.75:3000/api",
+        "EXPO_PUBLIC_USE_MOCK_API": "false",
+        "NODE_OPTIONS": "--max-old-space-size=4096",
+        "EAS_SKIP_AUTO_FINGERPRINT": "1"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://56.228.42.75:3000/api",
+        "EXPO_PUBLIC_USE_MOCK_API": "false",
+        "NODE_OPTIONS": "--max-old-space-size=4096",
+        "EAS_SKIP_AUTO_FINGERPRINT": "1"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

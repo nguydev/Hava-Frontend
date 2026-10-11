@@ -1,0 +1,85 @@
+{
+  "expo": {
+    "name": "GOODR",
+    "slug": "goodr-hvac",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "goodr",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#080B12",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.goodr.hvac",
+      "userInterfaceStyle": "dark",
+      "config": {
+        "googleMapsApiKey": "AIzaSyBRxnpjT3uUqk0SlN3nJSSltAO7Wx3kA9I"
+      }
+    },
+    "android": {
+      "package": "com.goodr.hvac",
+      "userInterfaceStyle": "dark",
+      "softwareKeyboardLayoutMode": "resize",
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBlpo_P1MrlXp2L8IShIF_oYucqADnsZQc"
+        }
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#080B12"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#080B12"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/adaptive-icon.png",
+          "color": "#2E90FA"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-image",
+      "expo-sharing",
+      "expo-sqlite",
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f40932b6-2594-45d6-b75e-1e1bbddfc6fc"
+      }
+    }
+  }
+}
